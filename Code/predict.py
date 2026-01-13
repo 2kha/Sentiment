@@ -1,4 +1,19 @@
 
+#summary     Sentiment Analysis
+#description Sentiment Analysis for Image
+#version     1.0.1
+#file        predict.py
+#author      2KHA 
+#contact     tla.atc.co.nl@gmail.com
+#copyright   Copyright (C) Mango AI
+#
+#This source file is free software, available under the following license:
+#   GNU GENERAL PUBLIC LICENSE license - https://github.com/2kha/Visualizations/blob/main/LICENSE
+#
+#This source file is distributed in the hope that it will be useful, but
+#WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+#or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.
+
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
