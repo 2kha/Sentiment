@@ -277,7 +277,7 @@ for j in range(3):
 # make predictions
 base_model = Xception(include_top=False, weights='imagenet', pooling='avg')
 
-sentiment_model =build_model()
+sentiment_model = build_model()
 
 sentiment_model.load_weights(model_path)
 
