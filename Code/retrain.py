@@ -134,9 +134,9 @@ def build_model():
 
     y = layers.Concatenate()([x1, x2, x3, x4])
 
-    y = SIMPLE_LOSS(name="loss")(labels, y) 
+    output = SIMPLE_LOSS(name="loss")(labels, y) 
 
-    model = Model(inputs=[inputs, labels], outputs=y)
+    model = Model(inputs=[inputs, labels], outputs=output)
 
     model.compile(optimizer=Adam())
 
