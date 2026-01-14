@@ -282,7 +282,11 @@ sentiment_model = build_model()
 sentiment_model.load_weights(model_path)
 
 prediction_model = keras.models.Model(
-        sentiment_model.get_layer(name="image").input, layers.Concatenate()([sentiment_model.get_layer(index=5).output, sentiment_model.get_layer(index=6).output, sentiment_model.get_layer(index=7).output, sentiment_model.get_layer(index=8).output]) 
+        sentiment_model.get_layer(name="image").input, layers.Concatenate()([
+          sentiment_model.get_layer(index=5).output, 
+          sentiment_model.get_layer(index=6).output, 
+          sentiment_model.get_layer(index=7).output, 
+          sentiment_model.get_layer(index=8).output]) 
 )
 
 
