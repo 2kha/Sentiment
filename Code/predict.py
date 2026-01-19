@@ -205,7 +205,7 @@ class SIMPLE_LOSS(layers.Layer):
 
 def build_model():
 
-    # Input with shape of height=32 and width=128 
+    # Input with shape of height=299 and width=299 
     inputs = Input(shape=(2048), name="image")
     labels = Input(shape=(4), name="label")
 
